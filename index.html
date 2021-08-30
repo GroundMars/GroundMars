@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FUUN, Yes!</title>
+	<link rel="shortcut icon" href="D:/99173.png" type="ba.png">
+	 <style>
+
+   h3 {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+   } 
+   p {
+    font-family: Georgia, Arial, Times, serif;
+   }
+
+   button {
+    background: #008EB0; 
+    color: #fff;
+    border: none; 
+    padding: 1rem 1.5rem; 
+    margin-bottom: 1rem; 
+   }
+   .green { background: #73A353; }
+   .red { background: #C1172C; }
+   .orange { background: #F7941E; }
+  </style>
+
+</head>
+<body bgcolor="#FFFFFF">
+
+<hr size="12" color="#3566B0">
+
+<h3><center><font size="5" color="SteelBlue" face="arial">Click Counter</font></center></h3>
+<div>
+    <center><h3 id="counter-label">0</h3></center>
+</div>
+<center>
+    <div>
+      <button
+         class="green" onclick="incrementClick()">Click Me
+     </button>
+
+        <button onclick="resetCounter()">Reset</button>
+    </div>
+</center>
+
+<script language="JavaScript">
+   var counterVal = 0;
+
+function incrementClick() {
+    updateDisplay(++counterVal);
+}
+
+function resetCounter() {
+    counterVal = 0;
+    updateDisplay(counterVal);
+}
+
+function updateDisplay(val) {
+    document.getElementById("counter-label").innerHTML = val;
+}
+</script>
+
+<hr size="12" color="#3566B0">
+
+</body>
+</html>
